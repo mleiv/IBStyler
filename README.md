@@ -42,7 +42,7 @@ public static var stylesList: [String: IBStyles.Properties] {
                 ] as IBStyles.Properties,
                 .statePressed: [
                     .backgroundColor: Colors.tinterColor,
-                    .textColor: Colors.tintColor, // required "Customer" buttonStyle to work
+                    .textColor: Colors.tintColor, // requires "Custom" buttonStyle to work
                 ] as IBStyles.Properties,
             ],
             "Button.WithHeartImage": [
