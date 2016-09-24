@@ -4,7 +4,7 @@
 
 Although this library was inspired by web design CSS, its purpose is rather to provide a general style guide compatible with Interface Builder, allowing app creators to utilize autolayout and size classes and all the great built-in Xcode features, without all the tedium of having to recreate page styling on every page.
 
-![Example](/IBStyler/master/SampleView.png?raw=true)
+![Example](/SampleView.png?raw=true)
 
 ## Including in Your App
 
