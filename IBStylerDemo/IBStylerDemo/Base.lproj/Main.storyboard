@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBStylerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goD-Rg-6pj">
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsW-Ix-hcd">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSm-vt-rG9">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bgp-UU-xaC">
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRK-ym-p8Z" userLabel="Circle Photo">
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="aEm-X3-ycj" customClass="IBStyledImageView" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="aEm-X3-ycj" secondAttribute="height" multiplier="1:1" id="4ae-KB-MqY"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="ich-3n-ZS5"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Image.CircularFrame.50"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="aEm-X3-ycj" firstAttribute="centerX" secondItem="qRK-ym-p8Z" secondAttribute="centerX" id="FVK-OF-56y"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="aEm-X3-ycj" secondAttribute="bottom" id="UY4-9K-gSb"/>
+                                                                    <constraint firstItem="aEm-X3-ycj" firstAttribute="top" secondItem="qRK-ym-p8Z" secondAttribute="top" id="gkc-yL-NZc"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Title Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qet-CY-Xs0" customClass="IBStyledLabel" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Title.NormalColor"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lIS-ci-S3U" customClass="IBStyledTextView" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="TextView.Bubbled"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Posted July 15, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaE-cS-GAS" customClass="IBStyledLabel" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Label.FooterDate"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ono-iO-rYj" userLabel="Field 1" customClass="IBFormFieldPair" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" priority="800" constant="30" id="8QU-TC-p7A"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Field"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="hint" value="Hint"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelWidth">
+                                                                        <real key="value" value="0.34999999999999998"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-LI-VD1" userLabel="Field 2" customClass="IBFormFieldPair" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" priority="800" constant="30" id="KtK-B7-zyw"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="label" value="Another Field"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="hint" value="Another Hint"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelWidth">
+                                                                        <real key="value" value="0.34999999999999998"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bMS-4u-LKb" customClass="IBStyledButton" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <state key="normal" title="Disabled Button"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Button.Bubbled"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="tempDisabled" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M38-1l-2Ve" customClass="IBStyledButton" customModule="IBStylerDemo" customModuleProvider="target">
+                                                                <state key="normal" title="Enabled Button"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Button.WithHeartImage"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="0vZ-g4-VK0"/>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bgp-UU-xaC" firstAttribute="top" secondItem="sSm-vt-rG9" secondAttribute="top" constant="20" id="2Xg-RI-moJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bgp-UU-xaC" secondAttribute="trailing" id="93Y-fa-4ho"/>
+                                                    <constraint firstItem="bgp-UU-xaC" firstAttribute="leading" secondItem="sSm-vt-rG9" secondAttribute="leading" id="CVq-uu-70F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bgp-UU-xaC" secondAttribute="bottom" constant="20" id="DHs-1K-THH"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sSm-vt-rG9" firstAttribute="width" secondItem="hsW-Ix-hcd" secondAttribute="width" id="C3o-DO-pgc"/>
+                                            <constraint firstAttribute="trailing" secondItem="sSm-vt-rG9" secondAttribute="trailing" id="HrR-VH-ZaL"/>
+                                            <constraint firstItem="sSm-vt-rG9" firstAttribute="leading" secondItem="hsW-Ix-hcd" secondAttribute="leading" id="MBO-qz-Uqu"/>
+                                            <constraint firstItem="sSm-vt-rG9" firstAttribute="top" secondItem="hsW-Ix-hcd" secondAttribute="top" id="TkU-YV-cHH"/>
+                                            <constraint firstAttribute="bottom" secondItem="sSm-vt-rG9" secondAttribute="bottom" id="arP-mx-O4e"/>
+                                            <constraint firstItem="sSm-vt-rG9" firstAttribute="height" relation="greaterThanOrEqual" secondItem="hsW-Ix-hcd" secondAttribute="height" id="bdn-MP-JYg"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hsW-Ix-hcd" firstAttribute="leading" secondItem="goD-Rg-6pj" secondAttribute="leading" id="Hf4-SZ-5kE"/>
+                                    <constraint firstItem="sSm-vt-rG9" firstAttribute="height" secondItem="goD-Rg-6pj" secondAttribute="height" priority="100" id="UP7-SA-cFN"/>
+                                    <constraint firstItem="hsW-Ix-hcd" firstAttribute="top" secondItem="goD-Rg-6pj" secondAttribute="top" id="Uho-0C-8xx"/>
+                                    <constraint firstAttribute="bottom" secondItem="hsW-Ix-hcd" secondAttribute="bottom" id="gZC-Fn-b08"/>
+                                    <constraint firstAttribute="trailing" secondItem="hsW-Ix-hcd" secondAttribute="trailing" id="mBx-Qb-sV6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="goD-Rg-6pj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dzy-pW-98h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="goD-Rg-6pj" secondAttribute="trailing" id="VXd-jK-Uzx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="goD-Rg-6pj" secondAttribute="bottom" id="luk-Wk-RqS"/>
+                            <constraint firstItem="goD-Rg-6pj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mu5-c9-QgF"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="fieldPair1" destination="ono-iO-rYj" id="UDz-5a-3cU"/>
+                        <outlet property="fieldPair2" destination="fAV-LI-VD1" id="fjF-f5-6Bv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="228" height="227"/>
+    </resources>
+</document>
