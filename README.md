@@ -42,13 +42,13 @@ public static var stylesList: [String: IBStyles.Properties] {
                 ] as IBStyles.Properties,
                 .statePressed: [
                     .backgroundColor: Colors.tinterColor,
-                    .textColor: Colors.tintColor, // requires "Custom" buttonStyle to work
+                    .textColor: Colors.tintColor, // requires "Custom" buttonType to work
                 ] as IBStyles.Properties,
             ],
             "Button.WithHeartImage": [
                 .inherit: ["Button.Bubbled"],
                 .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tintColor, Colors.tinterColor]),
-                .buttonImage: UIImage.ibSafeImage(named: "Heart"),
+                .buttonImage: UIImage.ibSafeImage(named: "Heart"), // Interface Builder has issues finding code-created images
                 .padding: [17.0, 20.0],
                 .statePressed: [
                     .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tinterColor, Colors.tintColor]),
