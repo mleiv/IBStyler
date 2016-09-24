@@ -21,7 +21,7 @@ See Styles.swift for how to customize the styles for your own purposes. See IBFo
 public static var stylesList: [String: IBStyles.Properties] {
         return [
             "Button": [ // default style for all IBStyledButton elements
-                .font: Fonts.body.boldStyle.normalColor,
+                .font: Fonts.body.boldStyle,
                 .textColor: Colors.tintColor,
                 .padding: [0],
             ],

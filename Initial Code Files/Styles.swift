@@ -27,28 +27,16 @@ extension Styles {
     /// Fonts are automatically scalable (property .hasAdjustableFontSize can remove this behavior).
     public struct Fonts {
         public struct body {
-            public struct normalStyle {
-                public static let normalColor = IBFont(style: .normal, size: .normal)
-            }
-            public struct boldStyle {
-                public static let normalColor = IBFont(style: .semiBold, size: .normal)
-            }
+            public static let normalStyle = IBFont(style: .normal, size: .normal)
+            public static let boldStyle = IBFont(style: .semiBold, size: .normal)
         }
         public struct title {
-            public struct normalStyle {
-                public static let normalColor = IBFont(style: .semiBold, size: .bigger)
-            }
+            public static let normalStyle = IBFont(style: .semiBold, size: .bigger)
         }
         public struct caption {
-            public struct normalStyle {
-                public static let normalColor = IBFont(style: .normal, size: .small)
-            }
-            public struct boldStyle {
-                public static let normalColor = IBFont(style: .semiBold, size: .small)
-            }
-            public struct italicStyle {
-                public static let normalColor = IBFont(style: .italic, size: .small)
-            }
+            public static let normalStyle = IBFont(style: .normal, size: .small)
+            public static let boldStyle = IBFont(style: .semiBold, size: .small)
+            public static let italicStyle = IBFont(style: .italic, size: .small)
         }
     }
     
@@ -72,16 +60,16 @@ extension Styles {
         return [
             // some generic styles
             "Button": [
-                .font: Fonts.body.boldStyle.normalColor,
+                .font: Fonts.body.boldStyle,
                 .textColor: Colors.tintColor,
                 .padding: [0],
             ],
             "Label": [
-                .font: Fonts.body.normalStyle.normalColor,
+                .font: Fonts.body.normalStyle,
                 .textColor: Colors.normalColor,
             ],
             "TextField": [
-                .font: Fonts.body.normalStyle.normalColor,
+                .font: Fonts.body.normalStyle,
                 .textColor: Colors.tintColor,
             ],
             "TextView": [
@@ -90,14 +78,14 @@ extension Styles {
             ],
             // some general styles
             "Caption.NormalColor": [
-                .font: Fonts.caption.normalStyle.normalColor,
+                .font: Fonts.caption.normalStyle,
                 .textColor: Colors.normalColor,
             ],
             "Body.NormalColor": [
                 .inherit: ["Label"],
             ],
             "Title.NormalColor": [
-                .font: Fonts.title.normalStyle.normalColor,
+                .font: Fonts.title.normalStyle,
                 .textColor: Colors.normalColor,
                 .hasAdjustableFontSize: false,
             ],
@@ -136,7 +124,7 @@ extension Styles {
             ],
             "Label.TextField": [
                 .inherit: ["Label"],
-                .font: Fonts.body.boldStyle.normalColor,
+                .font: Fonts.body.boldStyle,
                 .textAlign: NSTextAlignment.right,
             ],
             // some more specific styles
@@ -147,7 +135,7 @@ extension Styles {
                 .backgroundColor: Colors.tintColor,
             ],
             "Label.FooterDate": [
-                .font: Fonts.caption.italicStyle.normalColor,
+                .font: Fonts.caption.italicStyle,
                 .textColor: Colors.accentColor,
                 .textAlign: NSTextAlignment.right,
             ],
