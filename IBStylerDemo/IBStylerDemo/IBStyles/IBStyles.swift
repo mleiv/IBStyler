@@ -40,15 +40,14 @@ public struct Styles: Stylesheet {}
 //    public static var stylesList: [String: IBStyles.Properties] {
 //        return [
 //        "Label": [
-//                    .Font: IBFont.sizeStyle(15.0, .normal),
+//                    .Font: IBFont(style: .normal, size: .normal),
 //                    .TextColor: UIColor.black,
 //                ],
 //        ]
 //    }
 //    
 //    public static func applyGlobalStyles(window: UIWindow?) {
-//        IBStyles.fontsList = fontsList
-//        IBStyles.stylesList = stylesList
+//        // apply global styles link tintColor
 //    }
 //}
 

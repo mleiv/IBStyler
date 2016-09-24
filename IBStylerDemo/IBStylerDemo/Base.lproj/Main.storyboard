@@ -105,6 +105,7 @@
                                                                 <state key="normal" title="Enabled Button"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Button.WithHeartImage"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="tempPressed" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </button>
                                                             <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="0vZ-g4-VK0"/>
