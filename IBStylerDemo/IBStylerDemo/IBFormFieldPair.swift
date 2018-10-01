@@ -31,7 +31,7 @@ open class IBFormFieldPair: UIStackView {
                 labelWidthConstraint?.isActive = true
             } else {
                 labelWidthConstraint = labelElement?.widthAnchor.constraint(equalToConstant: 0.0)
-                labelWidthConstraint?.priority = 100
+                labelWidthConstraint?.priority = UILayoutPriority(rawValue: 100)
                 labelWidthConstraint?.isActive = true
             }
         }
@@ -72,7 +72,7 @@ open class IBFormFieldPair: UIStackView {
                 labelWidthConstraint?.isActive = true
             } else {
                 labelWidthConstraint = labelElement.widthAnchor.constraint(equalToConstant: 0.0)
-                labelWidthConstraint?.priority = 100
+                labelWidthConstraint?.priority = UILayoutPriority(rawValue: 100)
                 labelWidthConstraint?.isActive = true
             }
         }

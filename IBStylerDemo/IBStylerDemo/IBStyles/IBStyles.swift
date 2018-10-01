@@ -40,8 +40,8 @@ public struct Styles: Stylesheet {}
 //    public static var stylesList: [String: IBStyles.Properties] {
 //        return [
 //        "Label": [
-//                    .Font: IBFont(style: .normal, size: .normal),
-//                    .TextColor: UIColor.black,
+//                    .font: IBFont(style: .normal, size: .normal),
+//                    .textColor: UIColor.black,
 //                ],
 //        ]
 //    }
@@ -215,22 +215,22 @@ public struct IBStyles {
     /// - parameter identifier:      the key of the element's styles
     /// - parameter to (element):    the element to be styled
     /// - parameter forState:        (Optional) the UIControlState in play - normal, disabled, highlighted, or selected
-    public static func apply(identifier: String, to element: UIView!, forState state: UIControlState) {
+    public static func apply(identifier: String, to element: UIView!, forState state: UIControl.State) {
         var properties = getAllInheritedProperties(stylesList[identifier] ?? [:])
         switch (state) {
-            case UIControlState() :
+            case UIControl.State() :
                 if let p2 = properties[.stateActive] as? IBStyles.Properties {
                     properties = getAllInheritedProperties(p2)
                 }
-            case UIControlState.disabled :
+            case UIControl.State.disabled :
                 if let p2 = properties[.stateDisabled] as? IBStyles.Properties {
                     properties = getAllInheritedProperties(p2)
                 }
-            case UIControlState.highlighted :
+            case UIControl.State.highlighted :
                 if let p2 = properties[.statePressed] as? IBStyles.Properties {
                     properties = getAllInheritedProperties(p2)
                 }
-            case UIControlState.selected :
+            case UIControl.State.selected :
                 if let p2 = properties[.stateSelected] as? IBStyles.Properties {
                     properties = getAllInheritedProperties(p2)
                 }
@@ -245,7 +245,7 @@ public struct IBStyles {
     /// - parameter properties:      the list of styles
     /// - parameter to (element):    the element to be styled
     /// - parameter forState:        (Optional) the UIControlState in play - defaults to normal
-    fileprivate static func apply(properties: IBStyles.Properties, to element: UIView!, forState state: UIControlState = UIControlState()) {
+    fileprivate static func apply(properties: IBStyles.Properties, to element: UIView!, forState state: UIControl.State = UIControl.State()) {
         guard element != nil else { return }
         let sortedKeys = properties.keys.sorted(by: Property.sort)
         for type in sortedKeys {
@@ -264,7 +264,7 @@ public struct IBStyles {
                         let gradientView = gradient.createGradientView(element.bounds)
                         element.layer.sublayers?.filter({ $0 is CAGradientLayer }).forEach({ $0.removeFromSuperlayer() })
                         element.layer.insertSublayer(gradientView.layer, at: 0)
-                        gradientView.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+                        gradientView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
                     }
                 
                 case .borderColor:
@@ -279,7 +279,7 @@ public struct IBStyles {
                     if let image = value as? UIImage, let button = element as? UIButton {
                         button.setImage(image, for: state)
                         if let imageView = button.imageView {
-                            button.bringSubview(toFront: imageView)
+                            button.bringSubviewToFront(imageView)
                         }
                     }
                 

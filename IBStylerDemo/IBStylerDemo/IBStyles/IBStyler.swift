@@ -22,7 +22,7 @@ public class IBStyler: NSObject {
         // BTW, delegate's identifier is not usually available at the time a delegate's init() is called. Sorry.
         super.init()
         NotificationCenter.default.removeObserver(self)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.changeTextSize), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.changeTextSize), name: UIContentSizeCategory.didChangeNotification, object: nil)
     }
     
     deinit {
@@ -45,7 +45,7 @@ public class IBStyler: NSObject {
     }
     
     /// A special function for IBStyledButton elements to change state-specific styles on state-changing events (see IBStyledButton for more).
-    public func applyState(_ state:UIControlState) {
+    public func applyState(_ state:UIControl.State) {
         //changes only styles specific to a state, also ignores didApplyFormat flag
         guard !elementIdentifier.isEmpty  else { return }
         IBStyles.apply(identifier: elementIdentifier, to: styledElement as? UIView, forState: state)
@@ -53,7 +53,7 @@ public class IBStyler: NSObject {
     
     /// For internal use only.
     /// Listens for user font size preference event, and accordingly changes font size for element.
-    public func changeTextSize() {
+    @objc public func changeTextSize() {
         let contentSizeCategory = UIApplication.shared.preferredContentSizeCategory
         if lastContentSizeCategory != contentSizeCategory {
             IBStyles.apply(identifier: elementIdentifier, to: styledElement as? UIView)

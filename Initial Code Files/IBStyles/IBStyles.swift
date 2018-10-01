@@ -40,8 +40,8 @@ public struct Styles: Stylesheet {}
 //    public static var stylesList: [String: IBStyles.Properties] {
 //        return [
 //        "Label": [
-//                    .Font: IBFont(style: .normal, size: .normal),
-//                    .TextColor: UIColor.black,
+//                    .font: IBFont(style: .normal, size: .normal),
+//                    .textColor: UIColor.black,
 //                ],
 //        ]
 //    }
