@@ -142,7 +142,7 @@ extension Styles {
             "Button.WithHeartImage": [
                 .inherit: ["Button.Bubbled"],
                 .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tintColor, Colors.tinterColor]),
-                .buttonImage: UIImage.ibSafeImage(named: "Heart"),
+                .buttonImage: UIImage.ibSafeImage(named: "Heart")!,
                 .padding: [17.0,20.0],
                 .statePressed: [
                     .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tinterColor, Colors.tintColor]),

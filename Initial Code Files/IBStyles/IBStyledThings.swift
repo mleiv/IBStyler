@@ -170,7 +170,7 @@ open class IBStyledButton: UIButton, IBStylable {
     open var tempPressed: Bool = false
     open lazy var styler: IBStyler? = { return IBStyler(element: self) }()
     open var didLayout = false
-    open var lastState: UIControlState?
+    open var lastState: UIControl.State?
     
     public convenience init(identifier: String) {
         self.init()
@@ -201,7 +201,7 @@ open class IBStyledButton: UIButton, IBStylable {
     }
     
     /// A subset of states which IBStyles can actually handle currently. :/
-    func getState() -> UIControlState {
+    func getState() -> UIControl.State {
         if !isEnabled {
             return .disabled
         }

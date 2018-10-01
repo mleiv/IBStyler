@@ -14,13 +14,13 @@ import UIKit
 extension Styles {
     /// Define your app styles using names that indicate their usage rather than color, allowing for rapid app-wide restyling.
     public struct Colors {
-        public static let normalColor = UIColor.black
-        public static let tintColor = UIColor(red: 0.8, green: 0.0, blue: 0.0, alpha: 1.0)
-        public static let tinterColor = UIColor(red: 0.6, green: 0.0, blue: 0.0, alpha: 1.0)
-        public static let tintOppositeColor = UIColor.white
-        public static let accentColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-        public static let altAccentColor = UIColor(red: 0.2, green: 0.3, blue: 0.9, alpha: 1.0)
-        public static let linkColor = UIColor(red: 0.8, green: 0.0, blue: 0.0, alpha: 1.0)
+    public static let normalColor = UIColor.black
+    public static let tintColor = UIColor(red: 0.8, green: 0.0, blue: 0.0, alpha: 1.0)
+    public static let tinterColor = UIColor(red: 0.6, green: 0.0, blue: 0.0, alpha: 1.0)
+    public static let tintOppositeColor = UIColor.white
+    public static let accentColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+    public static let altAccentColor = UIColor(red: 0.2, green: 0.3, blue: 0.9, alpha: 1.0)
+    public static let linkColor = UIColor(red: 0.8, green: 0.0, blue: 0.0, alpha: 1.0)
     }
     
     /// Define your fonts using general style groups.
@@ -142,7 +142,7 @@ extension Styles {
             "Button.WithHeartImage": [
                 .inherit: ["Button.Bubbled"],
                 .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tintColor, Colors.tinterColor]),
-                .buttonImage: UIImage.ibSafeImage(named: "Heart"),
+                .buttonImage: UIImage.ibSafeImage(named: "Heart")!,
                 .padding: [17.0,20.0],
                 .statePressed: [
                     .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tinterColor, Colors.tintColor]),
