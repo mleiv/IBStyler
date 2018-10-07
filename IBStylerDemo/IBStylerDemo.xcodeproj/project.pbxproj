@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B13695E4216970F200379DE9 /* IBStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13695E0216970F200379DE9 /* IBStylesheet.swift */; };
+		B13695E5216970F200379DE9 /* IBStyleProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13695E1216970F200379DE9 /* IBStyleProperty.swift */; };
+		B13695E6216970F200379DE9 /* IBStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13695E2216970F200379DE9 /* IBStyler.swift */; };
+		B13695E7216970F200379DE9 /* IBStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13695E3216970F200379DE9 /* IBStyleManager.swift */; };
 		B1615B061D90AFAD00084809 /* IBFormFieldPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1615B051D90AFAD00084809 /* IBFormFieldPair.swift */; };
 		B1B2C5BA1D8E65E300959341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C5B91D8E65E300959341 /* AppDelegate.swift */; };
 		B1B2C5BC1D8E65E300959341 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C5BB1D8E65E300959341 /* ViewController.swift */; };
@@ -15,16 +19,18 @@
 		B1B2C5C41D8E65E400959341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B2C5C21D8E65E400959341 /* LaunchScreen.storyboard */; };
 		B1B2C5CF1D8E660100959341 /* IBStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C5CC1D8E660100959341 /* IBStylable.swift */; };
 		B1B2C5D01D8E660100959341 /* IBStyledThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C5CD1D8E660100959341 /* IBStyledThings.swift */; };
-		B1B2C5D11D8E660100959341 /* IBStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C5CE1D8E660100959341 /* IBStyles.swift */; };
 		B1B2C5D31D8E662700959341 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C5D21D8E662700959341 /* Styles.swift */; };
 		B1B2C60A1D8E6CA200959341 /* IBGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C6091D8E6CA200959341 /* IBGradient.swift */; };
 		B1B2C60C1D8E6CCB00959341 /* IBFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C60B1D8E6CCB00959341 /* IBFont.swift */; };
-		B1B2C60E1D8F520A00959341 /* IBStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C60D1D8F520A00959341 /* IBStyler.swift */; };
 		B1C66F151D96692F00E2B186 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C66F131D96692F00E2B186 /* UIImage.swift */; };
 		B1C66F161D96692F00E2B186 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C66F141D96692F00E2B186 /* UIWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B13695E0216970F200379DE9 /* IBStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStylesheet.swift; sourceTree = "<group>"; };
+		B13695E1216970F200379DE9 /* IBStyleProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStyleProperty.swift; sourceTree = "<group>"; };
+		B13695E2216970F200379DE9 /* IBStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBStyler.swift; path = ../../../../MEGameTracker/MEGameTracker/Library/IBStyles/IBStyler.swift; sourceTree = "<group>"; };
+		B13695E3216970F200379DE9 /* IBStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStyleManager.swift; sourceTree = "<group>"; };
 		B1615B051D90AFAD00084809 /* IBFormFieldPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBFormFieldPair.swift; sourceTree = "<group>"; };
 		B1B2C5B61D8E65E300959341 /* IBStylerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBStylerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B2C5B91D8E65E300959341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,11 +41,9 @@
 		B1B2C5C51D8E65E400959341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1B2C5CC1D8E660100959341 /* IBStylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStylable.swift; sourceTree = "<group>"; };
 		B1B2C5CD1D8E660100959341 /* IBStyledThings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStyledThings.swift; sourceTree = "<group>"; };
-		B1B2C5CE1D8E660100959341 /* IBStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStyles.swift; sourceTree = "<group>"; };
 		B1B2C5D21D8E662700959341 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B1B2C6091D8E6CA200959341 /* IBGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBGradient.swift; sourceTree = "<group>"; };
 		B1B2C60B1D8E6CCB00959341 /* IBFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBFont.swift; sourceTree = "<group>"; };
-		B1B2C60D1D8F520A00959341 /* IBStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBStyler.swift; sourceTree = "<group>"; };
 		B1C66F131D96692F00E2B186 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		B1C66F141D96692F00E2B186 /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +99,10 @@
 				B1B2C6091D8E6CA200959341 /* IBGradient.swift */,
 				B1B2C5CC1D8E660100959341 /* IBStylable.swift */,
 				B1B2C5CD1D8E660100959341 /* IBStyledThings.swift */,
-				B1B2C60D1D8F520A00959341 /* IBStyler.swift */,
-				B1B2C5CE1D8E660100959341 /* IBStyles.swift */,
+				B13695E3216970F200379DE9 /* IBStyleManager.swift */,
+				B13695E1216970F200379DE9 /* IBStyleProperty.swift */,
+				B13695E2216970F200379DE9 /* IBStyler.swift */,
+				B13695E0216970F200379DE9 /* IBStylesheet.swift */,
 			);
 			path = IBStyles;
 			sourceTree = "<group>";
@@ -186,15 +192,17 @@
 				B1B2C5D01D8E660100959341 /* IBStyledThings.swift in Sources */,
 				B1B2C5CF1D8E660100959341 /* IBStylable.swift in Sources */,
 				B1B2C60C1D8E6CCB00959341 /* IBFont.swift in Sources */,
-				B1B2C5D11D8E660100959341 /* IBStyles.swift in Sources */,
 				B1B2C5D31D8E662700959341 /* Styles.swift in Sources */,
 				B1B2C60A1D8E6CA200959341 /* IBGradient.swift in Sources */,
+				B13695E7216970F200379DE9 /* IBStyleManager.swift in Sources */,
 				B1C66F161D96692F00E2B186 /* UIWindow.swift in Sources */,
+				B13695E6216970F200379DE9 /* IBStyler.swift in Sources */,
 				B1B2C5BC1D8E65E300959341 /* ViewController.swift in Sources */,
 				B1B2C5BA1D8E65E300959341 /* AppDelegate.swift in Sources */,
 				B1615B061D90AFAD00084809 /* IBFormFieldPair.swift in Sources */,
+				B13695E4216970F200379DE9 /* IBStylesheet.swift in Sources */,
 				B1C66F151D96692F00E2B186 /* UIImage.swift in Sources */,
-				B1B2C60E1D8F520A00959341 /* IBStyler.swift in Sources */,
+				B13695E5216970F200379DE9 /* IBStyleProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

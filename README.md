@@ -10,7 +10,7 @@ Also, by default it scales all the fonts to user-preferred sizing.
 
 ## Including in Your App
 
-I am not a big fan of the basket-of-third-party-libraries approach to iOS dev (In fact, this has been the single point of rejection in all my job interviews, because for some reason all y'all love your third party casseroles just that much. Yay for you!). So this isn't on CocoaPods or Carthage. Put it in your damn app yourself and use it as a starting point for your own great ideas, rather than as a stagnant black box of magic sauce that breaks every time Swift changes. 
+I am not a big fan of the basket-of-third-party-libraries approach to iOS dev. So this isn't on CocoaPods or Carthage. Put it in your app yourself and use it as a starting point for your own great ideas, rather than as a stagnant black box of magic sauce that breaks every time Swift changes. 
 
 See Styles.swift for how to customize the styles for your own purposes. See IBFormFieldPair.swift for how to extend it to provide new, effort-saving subclasses.
 
@@ -20,7 +20,7 @@ See Styles.swift for how to customize the styles for your own purposes. See IBFo
 1. Create your styles in the Styles.swift file.
 
 ```swift
-public static var stylesList: [String: IBStyles.Properties] {
+public static var styles: [String: IBStyleProperty.List] {
         return [
             "Button": [ // default style for all IBStyledButton elements
                 .font: Fonts.body.boldStyle,
@@ -39,11 +39,11 @@ public static var stylesList: [String: IBStyles.Properties] {
                     .textColor: Colors.normalColor.withAlphaComponent(0.4),
                     .backgroundColor: Colors.tintColor.withAlphaComponent(0.4),
                     .borderColor: Colors.normalColor.withAlphaComponent(0.4),
-                ] as IBStyles.Properties,
+                ] as IBStyleProperty.List,
                 .statePressed: [
                     .backgroundColor: Colors.tinterColor,
                     .textColor: Colors.tintColor, // requires "Custom" buttonType to work
-                ] as IBStyles.Properties,
+                ] as IBStyleProperty.List,
             ],
             "Button.WithHeartImage": [
                 .inherit: ["Button.Bubbled"],
@@ -52,7 +52,7 @@ public static var stylesList: [String: IBStyles.Properties] {
                 .padding: [17.0, 20.0],
                 .statePressed: [
                     .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tinterColor, Colors.tintColor]),
-                ] as IBStyles.Properties,
+                ] as IBStyleProperty.List,
             ],
         ]
     }

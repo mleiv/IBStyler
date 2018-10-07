@@ -10,8 +10,10 @@
 
 import UIKit
 
-/// -- REPLACE THIS FILE WITH YOUR OWN STYLES --
-extension Styles {
+public struct Styles: IBStylesheet {
+
+    public static var current = Styles()
+
     /// Define your app styles using names that indicate their usage rather than color, allowing for rapid app-wide restyling.
     public struct Colors {
     public static let normalColor = UIColor.black
@@ -41,7 +43,7 @@ extension Styles {
     }
     
     /// Pick some fancy custom fonts.
-    public static var fontsList: [IBFont.Style: String] {
+    public static var fonts: [IBFont.Style: String] {
         return [
         .normal: "Avenir-Roman", // also -Book?
         .italic: "Avenir-Oblique",
@@ -56,7 +58,7 @@ extension Styles {
     
     /// Style your app using general groups, or specific identifiers.
     /// Any style group can inherit from any other.
-    public static var stylesList: [String: IBStyles.Properties] {
+    public var styles: [String: IBStyleProperty.List] {
         return [
             // some generic styles
             "Button": [
@@ -101,11 +103,11 @@ extension Styles {
                     .textColor: Colors.normalColor.withAlphaComponent(0.4),
                     .backgroundColor: Colors.tintColor.withAlphaComponent(0.4),
                     .borderColor: Colors.normalColor.withAlphaComponent(0.4),
-                ] as IBStyles.Properties,
+                ] as IBStyleProperty.List,
                 .statePressed: [
                     .backgroundColor: Colors.tinterColor,
                     .textColor: Colors.tintColor,
-                ] as IBStyles.Properties,
+                ] as IBStyleProperty.List,
             ],
             "TextField.Bubbled": [
                 .inherit: ["TextField"],
@@ -146,14 +148,16 @@ extension Styles {
                 .padding: [17.0,20.0],
                 .statePressed: [
                     .backgroundGradient: IBGradient(direction: .vertical, colors: [Colors.tinterColor, Colors.tintColor]),
-                ] as IBStyles.Properties,
+                ] as IBStyleProperty.List,
             ],
         ]
     }
+
+    public var isInitialized: Bool = false
     
     /// This function is key to general site styles, beyond using IBStylable elements.
     /// Just make sure it is called in AppDelegate application didFinishLaunchingWithOptions:
-    public static func applyGlobalStyles(_ window: UIWindow?) {
+    public func applyGlobalStyles(inWindow window: UIWindow?) {
         
         window?.tintColor = Colors.tintColor
         
