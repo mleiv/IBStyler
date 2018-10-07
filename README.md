@@ -1,6 +1,6 @@
 # IBStyler
 
-**An iOS Swift 3.0 library to create app-wide styles easily visible in the Interface Builder**
+**iOS Swift 4.2 library to create app-wide styles easily visible in the Interface Builder**
 
 Although this library was inspired by web design CSS, its purpose is rather to provide a general style guide compatible with Interface Builder, allowing app creators to utilize autolayout and size classes and all the great built-in Xcode features, without all the tedium of having to recreate page styling on every page. 
 
